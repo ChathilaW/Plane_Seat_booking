@@ -416,7 +416,7 @@ public class App {
 
     }
 
-    //Save payment information to text a file
+    //Save payment information to a text file
     private static void SaveTO(){
         File file = new File("payment.text");
 
