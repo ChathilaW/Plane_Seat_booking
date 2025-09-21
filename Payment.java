@@ -1,5 +1,3 @@
-package PlaneSeatsApp;
-
 public class Payment{
 	private String email;
 	private double payment_amount;
@@ -26,4 +24,5 @@ public class Payment{
 	public void printPayment(){
 		System.out.println(" Email:" + email + " " + "Payment:" + payment_amount);
 	}
+
 }
