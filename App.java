@@ -21,6 +21,8 @@ public class App {
         planeSeats[1] = new int[22]; // row 2 - initialised at 0 all available
         planeSeats[2] = new int[22]; // row 2 - initialised at 0 all available
         planeSeats[3] = new int[16]; // row 2 - initialised at 0 all available
+
+        //price of a seat in each roww
         pricePerRow = new int[4];
         pricePerRow[0] = 50;
         pricePerRow[1] = 80;
@@ -117,6 +119,7 @@ public class App {
 
     }
 
+    //selecting a seat & paying for the ticket
     private static void buyTicket() {
         Scanner input = new Scanner(System.in);
 
@@ -168,7 +171,7 @@ public class App {
             }
         }
 
-        // Check if the seat is available or not
+        // Check if the seat is available or not & make payments
         val_con = true;
         if (planeSeats[row][seat] == 0) {
             planeSeats[row][seat] = 1;
@@ -208,6 +211,7 @@ public class App {
 
     }
 
+    //Search for payment information
     public static void searchPayment(){
         Scanner input = new Scanner(System.in);
         int search_row = 0;
@@ -412,6 +416,7 @@ public class App {
 
     }
 
+    //Save payment information to text file
     private static void SaveTO(){
         File file = new File("payment.text");
 
